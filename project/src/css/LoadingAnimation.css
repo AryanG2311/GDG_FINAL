@@ -1,0 +1,81 @@
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f8ff;
+}
+
+.loading-text {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  animation: fadeInOut 1.5s infinite;
+}
+
+.cow-animation {
+  width: 200px;
+  height: 150px;
+}
+
+/* Body bounce animation */
+.cow-body {
+  animation: bodyBounce 2s infinite ease-in-out;
+  transform-origin: center;
+}
+
+/* Ear wiggle animation */
+.cow-ear {
+  animation: earWiggle 3s infinite ease-in-out;
+  transform-origin: bottom center;
+}
+
+/* Tail wag animation */
+.cow-tail {
+  animation: tailWag 2.5s infinite ease-in-out;
+  transform-origin: 145px 80px;
+}
+
+@keyframes bodyBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes earWiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes tailWag {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
