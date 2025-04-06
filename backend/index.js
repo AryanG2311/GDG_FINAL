@@ -18,7 +18,7 @@ app.use(express.json());
 
 // Update CORS configuration to allow requests from 'http://localhost:5173'
 app.use(cors({ 
-  origin: "http://localhost:5173" || "https://gdg-final.onrender.com/", // Change this to your frontend URL
+  origin: "https://gdg-final-az9d.vercel.app/", // Change this to your frontend URL
   methods: "GET,POST,PUT,DELETE",
   credentials: true // Allow cookies if needed
 }));
