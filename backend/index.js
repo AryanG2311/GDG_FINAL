@@ -17,10 +17,22 @@ app.use(express.json());
 
 
 // Update CORS configuration to allow requests from 'http://localhost:5173'
-app.use(cors({ 
-  origin: "https://gdg-final-az9d.vercel.app/", // Change this to your frontend URL
-  methods: "GET,POST,PUT,DELETE",
-  credentials: true // Allow cookies if needed
+
+const cors = require("cors");
+
+const allowedOrigins = [
+  "https://gdg-final-az9d.vercel.app", // no trailing slash
+  "https://gdg-final-az9d.vercel.app/" // add both to be safe
+];
+
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  }
 }));
 app.use(cookieParser());
 
