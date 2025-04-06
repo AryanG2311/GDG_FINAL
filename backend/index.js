@@ -18,7 +18,6 @@ app.use(express.json());
 
 // Update CORS configuration to allow requests from 'http://localhost:5173'
 
-const cors = require("cors");
 
 const allowedOrigins = [
   "https://gdg-final-az9d.vercel.app", // no trailing slash
