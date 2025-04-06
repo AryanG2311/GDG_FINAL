@@ -11,7 +11,7 @@ function Home() {
 
     async function fetchData() {
       try {
-        const response = await axios.get(`https://gdg-final.onrender.com/api/owners/67cea83ff2074d36eff08c10/cows`);
+        const response = await axios.get(`https://gdg-final-1.onrender.com/api/owners/67cea83ff2074d36eff08c10/cows`);
         console.log(response.data);
         
        if(response.status == "200")

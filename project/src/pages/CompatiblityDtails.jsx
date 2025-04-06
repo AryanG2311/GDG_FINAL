@@ -157,7 +157,7 @@ const CompatibilityDetails = () => {
       // Add timestamp to URL to prevent caching
       const timestamp = new Date().getTime();
       const response = await api.get(
-        `https://gdg-final.onrender.com/api/owners/${cowId}/${bullId}/compat?_t=${timestamp}`,
+        `https://gdg-final-1.onrender.com/api/owners/${cowId}/${bullId}/compat?_t=${timestamp}`,
         {
           validateStatus: function (status) {
             return status >= 200 && status < 300;

@@ -32,7 +32,7 @@ const BreedingRecommendation = () => {
 
       async function fetchData() {
         try {
-          const response = await axios.get(`https://gdg-final.onrender.com/api/cows/${cowId}/cows`);
+          const response = await axios.get(`https://gdg-final-1.onrender.com/api/cows/${cowId}/cows`);
           console.log(response.data);
           
          if(response.status == "200")
