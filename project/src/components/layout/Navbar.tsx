@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
-              <Cow className="w-8 h-8 text-primary" />
+            <img src="https://www.shutterstock.com/image-vector/cows-silhouettes-different-poses-cow-600nw-2497026899.jpg" className='h-10 w-15'/>
               <span className="text-xl font-bold text-gray-900">
                 Cow Breed Advisor
               </span>

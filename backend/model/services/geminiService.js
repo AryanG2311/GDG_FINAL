@@ -1,6 +1,6 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
-const genAI = new GoogleGenerativeAI("AIzaSyBADA4B7gfQPWheKtDvVdYEIlUgXATgd4E");
+const genAI = new GoogleGenerativeAI("AIzaSyByumIo1Ie8FsZcdaHnWzpWmjAoALkYnPA");
 
 export const generateBreedingRecommendation = async (cowData) => {
   try {
