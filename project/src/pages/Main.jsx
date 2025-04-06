@@ -74,7 +74,7 @@ const BreedingRecommendation = () => {
       
       // Simulate minimum loading time for better UX
       const [response] = await Promise.all([
-        axios.get(`https://gdg-final-1.onrender.com/api/cows/cow/${cowId}/recommendation`),
+        axios.get(`https://gdg-final-blcg.onrender.com/api/cows/cow/${cowId}/recommendation`),
         new Promise(resolve => setTimeout(resolve, 2000)) // Minimum 2s loading time
       ]);
 

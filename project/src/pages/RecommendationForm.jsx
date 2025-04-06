@@ -102,7 +102,7 @@ const RecommendationForm = () => {
       updateFormData(currentStep);
   
       const response =  axios.post(
-        "https://gdg-final-1.onrender.com/api/cows/add",
+        "https://gdg-final-blcg.onrender.com/api/cows/add",
         {
           ownerId: "67cea83ff2074d36eff08c10",
           name: "bull2",

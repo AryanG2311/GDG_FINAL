@@ -15,8 +15,8 @@ const CompatibilityTest = () => {
     useEffect(() => {
         const fetchAnimals = async () => {
             try {
-                const cowsResponse = await axios.get('https://gdg-final-1.onrender.com/api/owners/67cea83ff2074d36eff08c10/cows');
-                const bullsResponse = await axios.get('https://gdg-final-1.onrender.com/api/owners/67cea83ff2074d36eff08c10/bulls');
+                const cowsResponse = await axios.get('https://gdg-final-blcg.onrender.com/api/owners/67cea83ff2074d36eff08c10/cows');
+                const bullsResponse = await axios.get('https://gdg-final-blcg.onrender.com/api/owners/67cea83ff2074d36eff08c10/bulls');
                 setCows(cowsResponse.data);
                 setBulls(bullsResponse.data);
             } catch (error) {
